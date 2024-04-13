@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Let me copy in peace",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "icons": {
+    "192": "glue.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
